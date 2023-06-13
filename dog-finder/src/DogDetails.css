@@ -1,0 +1,5 @@
+.DogDetails img{
+  width: 30%;
+  border: 5px solid rgb(36, 135, 241);   
+  border-radius: 20%;
+}

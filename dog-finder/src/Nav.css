@@ -1,0 +1,21 @@
+.Nav {
+  background-color: lightsalmon;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.Nav a {
+  text-decoration: none;
+  padding: 0 0.8em;
+  color: darkblue;
+}
+
+.Nav a:hover {
+  text-decoration: underline;
+}
+
+.Nav a.active {
+  background-color: white;
+  color: darkblue;
+  border-radius: 10px;
+}

@@ -1,25 +1,20 @@
 import './App.css';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
+
 import Nav from './Nav';
-import DogDetails from './DogDetails';
+import Routes from './Routes';
 
 import duke from './duke.jpg';
 import perry from './perry.jpg';
 import tubby from './tubby.jpg';
 import whiskey from './whiskey.jpg';
 
-function App(props) {
+function App({dogs}) {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav dogs={props.dogs}/>
-        
-        <Switch>
-          <Route exact path="/dogs/:name">
-            <DogDetails dog={props.dogs}/>
-          </Route>
-        </Switch>
-
+        <Nav dogs={dogs}/>
+        <Routes dogs={dogs}/>
       </BrowserRouter>
        
      
@@ -28,8 +23,7 @@ function App(props) {
 }
 
 
-App.defaultProps = {
-  dogs: [
+export const dogs = [
     {
       name: "Whiskey",
       age: 5,
@@ -71,7 +65,8 @@ App.defaultProps = {
       ]
     }
   ]
-}
 
+
+App.defaultProps = {dogs};
 
 export default App;
