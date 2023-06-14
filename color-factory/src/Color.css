@@ -1,0 +1,8 @@
+.Color a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background: black;
+  padding: 0 5px;
+  border-radius: 5px;
+}

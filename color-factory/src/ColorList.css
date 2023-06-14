@@ -1,0 +1,14 @@
+.ColorListHeader {
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  padding: 1em 0;
+}
+
+.ColorListHeader a {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ColorListBody {
+  padding-top: 1em;
+}

@@ -1,10 +1,16 @@
-import {useParams, Link} from 'react-router-dom';
+import {useParams, Link, useHistory} from 'react-router-dom';
+import './Color.css';
 
-const Color = () => {
+const Color = ({colors}) => {
   const {color} = useParams();
-  console.log(color)
+  let hex = colors[color];
+  const history = useHistory();
+  if (!hex) {
+    history.push('/colors');
+  }
+  
   return (
-    <div>
+    <div className="Color" style = {{backgroundColor: hex}}>
       <h1>THIS IS {color.toUpperCase()}</h1>
       <Link to="/colors">Go Back</Link>
     </div>

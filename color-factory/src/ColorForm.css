@@ -1,0 +1,16 @@
+.ColorForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ColorForm form {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.ColorForm form div {
+  padding: 10px;
+  text-align: left;
+}
